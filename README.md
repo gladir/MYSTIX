@@ -11,6 +11,10 @@ Voici la liste des différents fichiers proposés dans MYSTIX :
 		<th>Description</th>	
 	</tr>
         <tr>
+		<td><b>DREAM.PAS</b></td>
+		<td>Cette commande permet d'analyser le symbolisme et les sentiments dans un rêve.</td>
+	</tr>	
+        <tr>
 		<td><b>EASTER.PAS</b></td>
 		<td>Cette commande permet d'afficher la date de la Pâque pour l'année spécifié ou l'année courante.</td>
 	</tr>	
