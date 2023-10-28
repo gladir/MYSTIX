@@ -19,6 +19,10 @@ Voici la liste des différents fichiers proposés dans MYSTIX :
 		<td>Cette commande permet d'afficher la date de la Pâque pour l'année spécifié ou l'année courante.</td>
 	</tr>	
 	<tr>
+		<td><b>MOON.PAS</b></td>
+		<td>Cette commande permet d'afficher une phase lunaire dans un mois.</td>
+	</tr>	
+	<tr>
 		<td><b>SIGN.PAS</b></td>
 		<td>Cette commande permet d'afficher le signe astrologique.</td>
 	</tr>
