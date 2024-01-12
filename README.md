@@ -1,5 +1,5 @@
 # MYSTIX
-Liste de commande sur le mystique (horoscope, voyance, religion,...) écrit en Pascal
+Liste de commandes sur le mystique (horoscope, voyance, religion,...) écrit en Pascal
 
 <h2>Liste des fichiers</h2>
 
@@ -17,6 +17,10 @@ Voici la liste des différents fichiers proposés dans MYSTIX :
         <tr>
 		<td><b>EASTER.PAS</b></td>
 		<td>Cette commande permet d'afficher la date de la Pâque pour l'année spécifié ou l'année courante.</td>
+	</tr>	
+	<tr>
+		<td><b>MOON.PAS</b></td>
+		<td>Cette commande permet d'afficher une phase lunaire dans un mois.</td>
 	</tr>	
 	<tr>
 		<td><b>SIGN.PAS</b></td>
