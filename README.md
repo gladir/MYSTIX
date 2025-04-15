@@ -1,5 +1,5 @@
 # MYSTIX
-Liste de commandes sur le mystique (horoscope, voyance, religion,...) écrit en Pascal
+Liste de commandes sur le mystique (horoscope, voyance, religion,...) écrit en Pascal  (Turbo Pascal ou Free Pascal).
 
 <h2>Liste des fichiers</h2>
 
