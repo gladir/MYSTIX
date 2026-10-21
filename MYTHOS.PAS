@@ -98,7 +98,8 @@ Begin
  Add('Odyssey|greek|story|Odyssee : retour d''Odysseus (Ulysse) a Ithaque.||||Homere, Odyssee, chants I-XXIV');
  Add('Iliad|greek|story|Iliade : colere d''Achilles pendant la guerre de Troie.||||Homere, Iliade, chants I-XXIV');
  Add('Aeneid|roman|story|Eneide : voyage d''Aeneas (Enee) vers l''Italie.||||Virgile, Eneide, livres I-XII');
- Add('Ragnarok|nordic|story|Conflit final des dieux et renouvellement du monde.||||Edda poetique, Voluspa; Edda en prose, Gylfaginning');
+ Add('Ragnarok|nordic|story|Conflit final des dieux et renouvellement du monde.||||Edda poetique, '+
+     'Voluspa; Edda en prose, Gylfaginning');
 End;
 
 Procedure Help;
