@@ -23,6 +23,10 @@ Voici la liste des différents fichiers proposés dans MYSTIX :
 		<td>Cette commande permet d'afficher une phase lunaire dans un mois.</td>
 	</tr>	
 	<tr>
+		<td><b>MYTHOS.PAS</b></td>
+		<td>Catalogue mythologique : recherche, divinités, héros, créatures, familles, récits et export JSON/CSV/texte.</td>
+	</tr>
+	<tr>
 		<td><b>NEWAGE.PAS</b></td>
 		<td>Cette commande permet de générer du texte aléatoirement surle nouvelle âge (Newage Ipsum).</td>
 	</tr>
