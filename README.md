@@ -11,6 +11,10 @@ Voici la liste des différents fichiers proposés dans MYSTIX :
 		<th>Description</th>	
 	</tr>
         <tr>
+		<td><b>ASTROMAN.PAS</b></td>
+		<td>Astromancie : logiciel graphique interactif d'interprétation de l'astrologie (clone du logiciel URRIS de 1985) : thème natal, maisons, carte du ciel, planète dominante, thème du jour, prévisions, tarot astrologique et thème comparé, avec calepin (fichier ASTROMAN.CAL).</td>
+	</tr>
+        <tr>
 		<td><b>DREAM.PAS</b></td>
 		<td>Cette commande permet d'analyser le symbolisme et les sentiments dans un rêve.</td>
 	</tr>	
