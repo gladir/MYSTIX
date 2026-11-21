@@ -35,6 +35,10 @@ Voici la liste des différents fichiers proposés dans MYSTIX :
 		<td>Cette commande permet de générer du texte aléatoirement surle nouvelle âge (Newage Ipsum).</td>
 	</tr>
 	<tr>
+		<td><b>REVES.PAS</b></td>
+		<td>Interpréteur de rêves : logiciel graphique d'analyse des rêves (symboles, émotions, graphiques, classification et sens).</td>
+	</tr>
+	<tr>
 		<td><b>SIGN.PAS</b></td>
 		<td>Cette commande permet d'afficher le signe astrologique.</td>
 	</tr>
@@ -82,6 +86,72 @@ L'interface est en français par défaut. Elle passe en anglais, en allemand, en
 ASTROMAN</pre>
 
 Remarque : à cause du volume des données intégrées (environ 450 Ko), ASTROMAN.PAS se compile avec Free Pascal ; il dépasse la limite de 64 Ko de données de Turbo Pascal. Sous Linux, ajoutez l'unité de fils d'exécution exigée par PtcGraph : <b>fpc -Facthreads ASTROMAN.PAS</b>.
+
+<h2>Interpréteur de rêves (REVES.PAS)</h2>
+
+L'Interpréteur de rêves est un logiciel graphique qui analyse le récit d'un rêve. On écrit le rêve dans un éditeur de texte intégré, puis le programme repère les symboles et les émotions du récit et en tire un rapport : tonalité positive ou négative, graphiques à secteurs des thèmes et des domaines de vie, classification du rêve, archétypes de Jung et, pour finir, le sens du rêve. L'interprétation s'appuie sur l'onirologie traditionnelle et sur la psychologie des profondeurs (Freud, Jung).
+
+Tout tient dans un seul fichier. Les données sont intégrées sous forme de constantes :
+<ul>
+ <li>un dictionnaire de 442 symboles répartis en 18 catégories (eau et nature, animaux, corps, personnes, maison et lieux, objets, voyages, actions, éléments, spiritualité, vie et mort, nourriture, argent, vêtements, amour, couleurs et nombres, violence, fantastique) ; chaque symbole a son sens général, sa nuance en contexte favorable ou pénible, sa polarité, ses domaines de vie et son archétype ;</li>
+ <li>un lexique de 17 831 mots-clés en cinq langues ;</li>
+ <li>un lexique de près de 500 mots d'émotion répartis en neuf classes : joie, amour, sérénité, émerveillement, peur, anxiété, colère, tristesse, honte ;</li>
+ <li>les négations et les intensifs (« je n'avais pas peur », « très peur »).</li>
+</ul>
+Le récit peut être rédigé en français, en anglais, en allemand, en espagnol ou en italien : la langue est détectée automatiquement.
+
+<h3>Écrire le rêve</h3>
+
+Le menu <b>Fichier &gt; Nouveau rêve</b> (F2) ouvre la fiche du rêve : titre, date, rêveur, humeur au réveil, langue du récit et indicateurs « rêve récurrent » et « rêve lucide ». Le récit s'écrit ensuite dans l'éditeur (F5), qui revient à la ligne automatiquement. Pendant la frappe, les symboles reconnus sont surlignés en jaune, les émotions positives en vert et les négatives en rouge. La touche Tab (ou <b>`</b>) ajoute ou change l'accent de la lettre qui précède le curseur (e, é, è, ê, ë). Elle sert lorsque le clavier ne transmet pas les lettres accentuées, comme avec PtcGraph sous Free Pascal. Le menu <b>Rêve &gt; Exemple de rêve</b> charge un récit d'exemple dans la langue de l'interface.
+
+<p align="center"><img src="IMAGES/REVES-accueil.png" alt="Écran d'accueil" width="400"> <img src="IMAGES/REVES-editeur.png" alt="Éditeur du récit avec surlignage" width="400"></p>
+<p align="center"><img src="IMAGES/REVES-fiche.png" alt="Propriétés du rêve" width="400"> <img src="IMAGES/REVES-menu.png" alt="Menu Analyse" width="400"></p>
+
+<h3>L'analyse</h3>
+
+Le menu <b>Analyse</b> présente plusieurs pages :
+<ul>
+ <li><b>Sens du rêve</b> (F9) : la synthèse. Elle décrit la tonalité, l'émotion dominante, le thème et le domaine de vie principaux, les symboles clés interprétés selon leur contexte, le type de rêve, l'évolution du récit, l'archétype marquant, le lien avec l'humeur au réveil et un conseil.</li>
+ <li><b>Rapport complet</b> (F6) : tous les éléments de l'analyse. Un clic sur un symbole ouvre sa fiche.</li>
+ <li><b>Tonalité et émotions</b> (F7) : la part des éléments positifs, négatifs et neutres en secteurs, l'indice de tonalité de -100 à +100, les neuf émotions et l'évolution émotionnelle du début à la fin du récit.</li>
+ <li><b>Thèmes et domaines</b> (F8) : deux graphiques à secteurs, l'un pour les thèmes, l'autre pour les domaines de vie.</li>
+ <li><b>Classification</b> : les douze types de rêves, à savoir cauchemar, angoisse, désir, affectif, aventure, fantastique, spirituel, transformation, mémoire, prémonitoire, lucide et récurrent.</li>
+ <li><b>Archétypes</b> : l'Ombre, l'Anima ou l'Animus, la Persona, le Soi, la Grande Mère, le Père, le Vieux Sage, l'Enfant divin, le Héros et le Fripon.</li>
+</ul>
+
+<p align="center"><img src="IMAGES/REVES-sens.png" alt="Sens du rêve" width="400"> <img src="IMAGES/REVES-rapport.png" alt="Rapport complet" width="400"></p>
+<p align="center"><img src="IMAGES/REVES-tonalite.png" alt="Tonalité et émotions" width="400"> <img src="IMAGES/REVES-themes.png" alt="Thèmes et domaines de vie" width="400"></p>
+<p align="center"><img src="IMAGES/REVES-classification.png" alt="Classification du rêve" width="400"> <img src="IMAGES/REVES-symbole.png" alt="Fiche d'un symbole" width="400"></p>
+
+<h3>Dictionnaire, journal et rapport</h3>
+
+Le menu <b>Dictionnaire</b> permet de parcourir les 442 symboles par catégorie ou d'en rechercher un par un mot, dans n'importe laquelle des cinq langues. La fiche d'un symbole donne son sens, ses nuances et les mots qui le font reconnaître.
+
+<b>Fichier &gt; Enregistrer au journal</b> (F4) conserve le rêve dans le fichier <b>REVES.JNL</b> du répertoire courant. La liste du journal (F3) permet de rouvrir un rêve ou de le supprimer. <b>Journal &gt; Statistiques</b> analyse tous les rêves enregistrés et montre la tonalité des derniers rêves, la répartition de leurs types et les symboles qui reviennent le plus souvent. <b>Fichier &gt; Importer un fichier texte</b> charge un récit écrit ailleurs (UTF-8, Latin-1 ou page de code 437). <b>Fichier &gt; Exporter le rapport</b> enregistre l'analyse complète dans un fichier texte (REVES.TXT par défaut).
+
+<p align="center"><img src="IMAGES/REVES-journal.png" alt="Statistiques du journal" width="400"></p>
+
+<h3>Utilisation</h3>
+
+Le programme se pilote à la souris ou au clavier :
+<ul>
+ <li>menus déroulants : F10 ou Alt+lettre soulignée, puis les flèches, Entrée et Échap ;</li>
+ <li>touches de fonction : F1 aide, F2 nouveau rêve, F3 journal, F4 enregistrer, F5 récit, F6 rapport, F7 tonalité, F8 thèmes, F9 sens du rêve ;</li>
+ <li>défilement des pages : Haut, Bas, PgPréc et PgSuiv ;</li>
+ <li>Alt+X pour quitter.</li>
+</ul>
+Comme pour Astromancie, l'interface suit la variable d'environnement LANGUAGE (EN, GR, SP ou IT) et les interprétations sont rédigées en français.
+
+<pre>SET LANGUAGE=EN
+REVES</pre>
+
+Pour vérifier une analyse sans interface graphique :
+<ul>
+ <li><b>REVES /RAPPORT fichier.txt</b> affiche le rapport complet d'un récit ;</li>
+ <li><b>REVES /TEST fichier.txt</b> en donne le détail technique.</li>
+</ul>
+
+Remarque : avec environ 650 Ko de données intégrées, REVES.PAS se compile avec Free Pascal ; il dépasse lui aussi la limite de 64 Ko de données de Turbo Pascal. Sous Linux : <b>fpc -Facthreads REVES.PAS</b>.
 
 <h2>Compilation</h2>
 	
